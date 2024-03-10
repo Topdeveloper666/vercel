@@ -1,0 +1,6 @@
+npm ERR! arg Argument starts with non-ascii dash, this is probably invalid: –production
+
+> start
+> node server.js "–production"
+
+sh: node: command not found

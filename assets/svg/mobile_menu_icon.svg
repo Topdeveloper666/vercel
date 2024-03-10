@@ -1,0 +1,41 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width= "16px"
+    height= "16px"
+    viewBox="0 0 16 16"
+>
+    <g
+        id="Group_1"
+        data-name="Group 1"
+        transform="translate(-28 -63)"
+    >
+        <path
+            id="Rectangle_3"
+            data-name="Rectangle 3"
+            d="M0,0H5A2,2,0,0,1,7,2V5A2,2,0,0,1,5,7H2A2,2,0,0,1,0,5V0A0,0,0,0,1,0,0Z"
+            transform="translate(28 63)"
+            fill="#7c00b7"
+        />
+        <path
+            id="Rectangle_6"
+            data-name="Rectangle 6"
+            d="M2,0H5A2,2,0,0,1,7,2V5A2,2,0,0,1,5,7H0A0,0,0,0,1,0,7V2A2,2,0,0,1,2,0Z"
+            transform="translate(28 72)"
+            fill="#7c00b7"
+        />
+        <path
+            id="Rectangle_4"
+            data-name="Rectangle 4"
+            d="M2,0H7A0,0,0,0,1,7,0V5A2,2,0,0,1,5,7H2A2,2,0,0,1,0,5V2A2,2,0,0,1,2,0Z"
+            transform="translate(37 63)"
+            fill="#7c00b7"
+        />
+        <path
+            id="Rectangle_5"
+            data-name="Rectangle 5"
+            d="M2,0H5A2,2,0,0,1,7,2V7A0,0,0,0,1,7,7H2A2,2,0,0,1,0,5V2A2,2,0,0,1,2,0Z"
+            transform="translate(37 72)"
+            fill="#7c00b7"
+        />
+    </g>
+</svg>
