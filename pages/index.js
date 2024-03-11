@@ -47,7 +47,7 @@ export default function Home({ slider, homeData = {} }) {
     <div className="background2">
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/img/appleico.png" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/img/favicon.png" />
         <meta property="og:title" content="glamcode" />
         <meta property="og:description" content="salon at home for women" />
         <meta property="og:image" content="https://admin.glamcode.in/user-uploads/carousel-images/563a8734ea86c5df956964d0b9bbedc3.png.webp" />
