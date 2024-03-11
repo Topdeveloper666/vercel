@@ -84,7 +84,7 @@ export default function Home({ slider, homeData = {} }) {
             fontSize: _isMobile ? "large" : "2em",
           }}
         >
-          Home Salon Services
+          Home Salon Services123
         </p>
       </div>
 
