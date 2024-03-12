@@ -411,7 +411,6 @@ function Header() {
 
         <SidebarNav style={{
           position: 'fixed',
-          opacity: 1
         }} sidebar={sidebar} hidden={isMobile}>
 
           <SidebarWrap>
