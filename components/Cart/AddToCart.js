@@ -23,7 +23,6 @@ export default function AddToCart({ data }) {
   return (
     <>
       <div style={{
-        display: "grid",
         justifyContent: "center",
       }}>
         {inCart.length > 0 ? (

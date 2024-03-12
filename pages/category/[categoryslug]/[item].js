@@ -240,9 +240,10 @@ export default function Categoryslug({ servicesData }) {
                               <div
                                 className="col-md-12 col-lg-6 col-12 p-md-5 pt-md-3 pb-md-0 p-2 d-md-none d-block"
                                 key={Math.random()}
+                                style={{ overflow: 'auto' }}
                               >
                                 <div className="servicesMD row servicesMD-bg-color-1 align-items-center">
-                                  <div className="col-7 position-relative py-2 mb-md-0 mb-3">
+                                  <div className="col-7 position-relative py-2 mb-md-0 mb-3" style={{ display: 'flex', flexDirection: 'column' }}>
                                     <div className="d-flex align-items-center justify-content-between">
                                       <a href="#" className="service-title">
                                         {y.name}
@@ -283,8 +284,8 @@ export default function Categoryslug({ servicesData }) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="col-5 p-0 mb-md-0 mb-3">
-                                    <div className="addCartResp classAddDown">
+                                  <div className="col-5 p-0 mb-md-0 mb-3" style={{ display: 'flex', flexDirection: 'column' }}>
+                                    <div className="addCartResp classAddDown" style={{ marginBottom: '30px' }}>
                                       <img
                                         className="d-md-none d-block imageies"
                                         src={y.service_image_url}
@@ -292,8 +293,8 @@ export default function Categoryslug({ servicesData }) {
                                         height={200}
                                         width={200}
                                       />
-                                      <AddToCart data={y} />
                                     </div>
+                                    <AddToCart data={y} />
                                   </div>
                                   <div className="col-12">
                                     <div className="lineDiv mt-4" />
