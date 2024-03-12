@@ -50,7 +50,7 @@ function Header() {
 
   const [sidebar, setSidebar] = useState(false);
   const [searchValue, setSearchValue] = useState("");
-  const showSidebar = () => { console.log(111); setSidebar(!sidebar); }
+  const showSidebar = () => setSidebar(!sidebar);
 
   const [isClient, setIsClient] = useState(false)
   useEffect(() => {
