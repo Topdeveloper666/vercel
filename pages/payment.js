@@ -55,6 +55,7 @@ function Payment() {
   const [currentAddress, setCurrentAddress] = useState({});
   const [disabled, setDisable] = useState(false);
   const [cashbackService, setCashbackService] = useState(false);
+  const [walletCashback, setWalletCashback] = useState({});
 
   useEffect(() => {
     var total = 0;
@@ -72,8 +73,14 @@ function Payment() {
   useEffect(() => {
     frontService.getUserWalletDetail(userdetails?.id).then((res) => {
       setWallet({ total: res.total, username: res.username })
-    })
-  }, [])
+    });
+  }, []);
+
+  useEffect(() => {
+    frontService.getUserWalletCashBackDetail(userdetails?.id, total).then((res) => {
+      setWalletCashback(res);
+    });
+  }, [total])
 
   function emptyCoupon() {
     const common = {
@@ -656,7 +663,7 @@ function Payment() {
                     <div style={{ display: "flex", alignItems: "center" }}>
                       <div>
                       </div>
-                      <div style={{ marginLeft: "10px" }}>Use Wallet (Glam Coin - 1097)</div>
+                      <div style={{ marginLeft: "10px" }}>{`Use Wallet (Glam Coin - ${walletCashback?.wallet_points ? walletCashback?.wallet_points : 0})`}</div>
                     </div>
                     <Checkbox {...label} color="secondary" checked={checked} />
                   </div>

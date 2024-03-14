@@ -29,6 +29,7 @@ export const frontService = {
   getAvailableBookingSlots,
   getCashBackOffers,
   getUserWalletDetail,
+  getUserWalletCashBackDetail,
   changeScratchValueForId,
   addressDeleteByIdAndUserId,
 };
@@ -440,6 +441,19 @@ async function getUserWalletDetail(user_id) {
     headers: { "Content-Type": "application/json" },
   };
   return fetch(Global.BASE_API_PATH + `/wallet-info/${user_id}`, requestOptions)
+    .then(handleResponse)
+    .then((res) => {
+      return res;
+    });
+}
+
+async function getUserWalletCashBackDetail(user_id, booking_price) {
+  const requestOptions = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ booking_price }),
+  };
+  return fetch(Global.Test_API_PATH + `/wallet-cashback/${user_id}`, requestOptions)
     .then(handleResponse)
     .then((res) => {
       return res;
