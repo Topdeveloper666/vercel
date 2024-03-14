@@ -101,7 +101,7 @@ const Wallet = () => {
           </Row>
         </Tab.Container>
       </div>
-      <Scratch isModalOpen={isModalOpen} closeModal={closeModal} contentInScratchCard={contentInScratchCard} setCashBackData={setCashBackData} changeScratchValueForId={changeScratchValueForId}/>
+      <Scratch isModalOpen={isModalOpen} closeModal={closeModal} contentInScratchCard={contentInScratchCard} setCashBackData={setCashBackData} changeScratchValueForId={changeScratchValueForId} />
     </Fragment>
   );
 };

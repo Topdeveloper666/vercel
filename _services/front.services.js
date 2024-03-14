@@ -224,9 +224,8 @@ async function maincategory() {
   };
   return fetch(
     Global.BASE_API_PATH +
-      `/maincategory/${
-        localStorage.getItem("id") ? localStorage.getItem("id") : "2"
-      }`,
+    `/maincategory/${localStorage.getItem("id") ? localStorage.getItem("id") : "2"
+    }`,
     requestOptions
   )
     .then(handleResponse)
@@ -252,9 +251,8 @@ async function knowData() {
   };
   return fetch(
     Global.BASE_API_PATH +
-      `/knowdata/${
-        localStorage.getItem("id") ? localStorage.getItem("id") : "2"
-      }`,
+    `/knowdata/${localStorage.getItem("id") ? localStorage.getItem("id") : "2"
+    }`,
     requestOptions
   )
     .then(handleResponse)
@@ -280,7 +278,7 @@ async function allfaqs() {
   };
   return fetch(
     Global.BASE_API_PATH +
-      `/faqs/${localStorage.getItem("id") ? localStorage.getItem("id") : "2"}`,
+    `/faqs/${localStorage.getItem("id") ? localStorage.getItem("id") : "2"}`,
     requestOptions
   )
     .then(handleResponse)
@@ -414,7 +412,7 @@ async function getAvailableBookingSlots(data) {
   };
   return fetch(
     Global.BASE_API_PATH +
-      `/available_slots_san/${data.bookingDate}/${data.location_id}`,
+    `/available_slots_san/${data.bookingDate}/${data.location_id}`,
     requestOptions
   )
     .then(handleResponse)
@@ -441,7 +439,7 @@ async function getUserWalletDetail(user_id) {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   };
-  return fetch(Global.BASE_API_PATH + `/user_wallet/${user_id}`, requestOptions)
+  return fetch(Global.BASE_API_PATH + `/wallet-info/${user_id}`, requestOptions)
     .then(handleResponse)
     .then((res) => {
       return res;
