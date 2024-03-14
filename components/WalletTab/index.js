@@ -35,7 +35,7 @@ const Index = ({
                       : "Test"}
                   </h1>
                   <h1 style={{ color: "gold", paddingBottom: "10px" }}>
-                    {userWalletDetail?.total ? userWalletDetail.total : "105"}{" "}
+                    {userWalletDetail?.total ? userWalletDetail.total : "125"}{" "}
                     <span
                       style={{
                         fontSize: "20px",
