@@ -11,7 +11,9 @@ const Index = ({
   userWalletDetail,
   cashBackData,
   setContentInScratchCard,
+  walletCashback
 }) => {
+  console.log(walletCashback, "walletCashback")
   return (
     <Fragment>
       {tab == "wallet" ? (
@@ -35,7 +37,7 @@ const Index = ({
                       : "Test"}
                   </h1>
                   <h1 style={{ color: "gold", paddingBottom: "10px" }}>
-                    {userWalletDetail?.total ? userWalletDetail.total : "0"}{" "}
+                    {walletCashback?.wallet_points ? walletCashback?.wallet_points : "0"}{" "}
                     <span
                       style={{
                         fontSize: "20px",

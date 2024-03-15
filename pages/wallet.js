@@ -23,11 +23,19 @@ const Wallet = () => {
     cashbackService: [],
     thirdPartyCoupon: []
   });
+  const [walletCashback, setWalletCashback] = useState({});
   const [contentInScratchCard, setContentInScratchCard] = useState(null);
   const [userWalletDetail, setUserWalletDetail] = useState({
     status: null,
-    Wallet: []
+    Wallet: [],
+    walletCashback: {}
   });
+  const info = useSelector((state) => {
+    return state.commonData.common;
+  });
+  const cart = useSelector((state) => state.cardAdd?.cart);
+  const [total, setTotal] = React.useState(0);
+  const coupon_min = info?.coupon_min;
   const userdetails = useSelector((state) => state.userdetails?.userdetails);
   const openModal = () => {
     setIsModalOpen(true);
@@ -68,7 +76,24 @@ const Wallet = () => {
   }, [setMobile, userWalletDetail.status]);
   useEffect(() => {
     setInitialCashBack();
-  }, [])
+  }, []);
+  useEffect(() => {
+    var total = 0;
+    for (let i = 0; i < cart.length; i++) {
+      total += parseInt(cart[i].sum);
+    }
+    setTotal(total);
+
+    if (total < coupon_min) {
+      emptyCoupon();
+    } else {
+    }
+  }, [cart]);
+  useEffect(() => {
+    frontService.getUserWalletCashBackDetail(userdetails?.id, total).then((res) => {
+      setWalletCashback(res);
+    });
+  }, [total]);
   return (
     <Fragment>
       <div className="background3">
@@ -91,11 +116,11 @@ const Wallet = () => {
             <Tab.Content>
               <Tab.Pane eventKey="first">
                 <div className="jus-for-bg">
-                  <Sonnet tab={'wallet'} IsMobile={_isMobile} userWalletDetail={userWalletDetail} />
+                  <Sonnet tab={'wallet'} IsMobile={_isMobile} userWalletDetail={userWalletDetail} walletCashback={walletCashback} />
                 </div>
               </Tab.Pane>
               <Tab.Pane eventKey="second">
-                <Sonnet tab={'cashback'} IsMobile={_isMobile} openModal={openModal} userWalletDetail={userWalletDetail} cashBackData={cashBackData} setContentInScratchCard={setContentInThisScratchCard} />
+                <Sonnet tab={'cashback'} IsMobile={_isMobile} openModal={openModal} userWalletDetail={userWalletDetail} walletCashback={walletCashback} cashBackData={cashBackData} setContentInScratchCard={setContentInThisScratchCard} />
               </Tab.Pane>
             </Tab.Content>
           </Row>
