@@ -1,21 +1,34 @@
 import React, { useEffect, useState, lazy } from "react";
 import dynamic from "next/dynamic";
-import Slider from "../components/Slider/homeSlider";
-import Maincategory from "../components/Maincategory/maincategory";
-import Maincategorymobile from "../components/Maincategory/Maincategorymobile";
-import Faqs from "../components/Faqs/index";
-import Knowmore from "../components/Knowmore";
+// import Slider from "../components/Slider/homeSlider";
+// import Maincategory from "../components/Maincategory/maincategory";
+// import Maincategorymobile from "../components/Maincategory/Maincategorymobile";
+// import Faqs from "../components/Faqs/index";
+// import Knowmore from "../components/Knowmore";
 import { menuSave, mainLocation } from "../store/actions/index";
-import PreferredPackages from "../components/PreferredPackages";
-import ReferAndEarn from "../components/ReferAndEarn";
-import CustomerTestimonials from "../components/CustomerTestimonials";
+// import PreferredPackages from "../components/PreferredPackages";
+// import ReferAndEarn from "../components/ReferAndEarn";
+// import CustomerTestimonials from "../components/CustomerTestimonials";
 import { isMobile } from "react-device-detect";
-import OtpModal from "../components/Modal/OtpModal";
-import Global from "../_helpers/global";
+// import OtpModal from "../components/Modal/OtpModal";
+// import Global from "../_helpers/global";
 import { useDispatch } from "react-redux";
 import { MainHead } from "../components/Head";
-import Header from "../components/Header";
 import Head from 'next/head';
+// import Header from "../components/Header";
+const Header = dynamic(() => import("../components/Header"));
+// const menuSave = dynamic(() => import("../store/actions/index").then(module => module.menuSave));
+// const mainLocation = dynamic(() => import("../store/actions/index").then(module => module.mainLocation));
+const OtpModal = dynamic(() => import("../components/Modal/OtpModal"));
+const Slider = dynamic(() => import("../components/Slider/homeSlider"));
+const Maincategory = dynamic(() => import("../components/Maincategory/maincategory"));
+const Maincategorymobile = dynamic(() => import("../components/Maincategory/Maincategorymobile"));
+const Faqs = dynamic(() => import("../components/Faqs/index"));
+const Knowmore = dynamic(() => import("../components/Knowmore"));
+const ReferAndEarn = dynamic(() => import("../components/ReferAndEarn"));
+const CustomerTestimonials = dynamic(() => import("../components/CustomerTestimonials"));
+const PreferredPackages = dynamic(() => import("../components/PreferredPackages"));
+// const MainHead = dynamic(() => import("../components/Header").then(module => module.MainHead));
 // const Header = lazy(() => import('../components/Header'));
 // const Header = dynamic(() => import("../components/Header/index"), {
 //   ssr: false,
@@ -56,6 +69,7 @@ export default function Home({ slider, homeData = {} }) {
         <meta property="og:url" content="https://twitter.com/GlamCode3?t=medt6YYBVczVXZ-IWiUObg&s=08" />
         <meta property="og:url" content="https://www.facebook.com/myglamcode" />
         <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65f444e71a23d00019c3db08&product=inline-share-buttons&source=platform" async="async"></script>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
       </Head>
       <MainHead homeData={homeData} />
       <Header />
