@@ -14,7 +14,7 @@ export const MainHead = ({ homeData }) => {
 
             <meta
                 name="description"
-                content={homeData.home.seo_desc}
+                content="GlamCode Trending  Salon at Home which provides Salon Services for all the Beauty"
                 data-react-helmet="true"
             ></meta>
 
