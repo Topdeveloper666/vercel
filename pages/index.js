@@ -55,6 +55,7 @@ export default function Home({ slider, homeData = {} }) {
         <meta property="og:url" content="https://instagram.com/myglamcode?igshid=YmMyMTA2M2Y=" />
         <meta property="og:url" content="https://twitter.com/GlamCode3?t=medt6YYBVczVXZ-IWiUObg&s=08" />
         <meta property="og:url" content="https://www.facebook.com/myglamcode" />
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65f444e71a23d00019c3db08&product=inline-share-buttons&source=platform" async="async"></script>
       </Head>
       <MainHead homeData={homeData} />
       <Header />
