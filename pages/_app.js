@@ -81,6 +81,15 @@ function MyApp({ Component, pageProps, name }) {
                `}
       </Script>
       <Head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/appleico.png" />
+        <link rel="icon" href="/img/favicon.png" />
+        <meta property="og:title" content="glamcode" />
+        <meta property="og:description" content="salon at home for women" />
+        <meta property="og:image" content="https://admin.glamcode.in/user-uploads/carousel-images/563a8734ea86c5df956964d0b9bbedc3.png.webp" />
+        <meta property="og:url" content="https://youtube.com/channel/UC0tPgNGS96oVlkUqBf4ZM2Q" />
+        <meta property="og:url" content="https://instagram.com/myglamcode?igshid=YmMyMTA2M2Y=" />
+        <meta property="og:url" content="https://twitter.com/GlamCode3?t=medt6YYBVczVXZ-IWiUObg&s=08" />
+        <meta property="og:url" content="https://www.facebook.com/myglamcode" />
         <meta
           name="p:domain_verify"
           content="74b83f2fc1f6b702815166d707bdcaad"
@@ -99,8 +108,8 @@ function MyApp({ Component, pageProps, name }) {
           key="canonical"
         />
 
-        {/* <link rel="preconnect" href="https://admin.glamcode.in/user-uploads/carousel-images/21e7bb521040147483e85335fc32ed3e.png.webp" /> */}
-        {/* <link
+        <link rel="preconnect" href="https://admin.glamcode.in/user-uploads/carousel-images/21e7bb521040147483e85335fc32ed3e.png.webp" />
+        <link
           rel="preload"
           as="image"
           type="image/webp"
@@ -110,7 +119,7 @@ function MyApp({ Component, pageProps, name }) {
           rel="preload"
           as="image"
           type="image/webp"
-          href="https://admin.glamcode.in/user-uploads/carousel-images/fbe24ff0dc054411be4ea92e498d3399.png.webp" ></link> */}
+          href="https://admin.glamcode.in/user-uploads/carousel-images/fbe24ff0dc054411be4ea92e498d3399.png.webp" ></link>
 
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
