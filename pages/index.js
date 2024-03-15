@@ -52,13 +52,11 @@ export default function Home({ slider, homeData = {} }) {
         <link rel="icon" href="/img/favicon.png" />
         <meta property="og:title" content="glamcode" />
         <meta property="og:description" content="salon at home for women" />
-        <meta property="og:image" content="https://admin.glamcode.in/user-uploads/carousel-images/563a8734ea86c5df956964d0b9bbedc3.png.webp" />
+        {/* <meta property="og:image" content="https://admin.glamcode.in/user-uploads/carousel-images/563a8734ea86c5df956964d0b9bbedc3.png.webp" /> */}
         <meta property="og:url" content="https://youtube.com/channel/UC0tPgNGS96oVlkUqBf4ZM2Q" />
         <meta property="og:url" content="https://instagram.com/myglamcode?igshid=YmMyMTA2M2Y=" />
         <meta property="og:url" content="https://twitter.com/GlamCode3?t=medt6YYBVczVXZ-IWiUObg&s=08" />
         <meta property="og:url" content="https://www.facebook.com/myglamcode" />
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65f444e71a23d00019c3db08&product=inline-share-buttons&source=platform" async="async"></script>
-        <script async src="https://static.addtoany.com/menu/page.js"></script>
       </Head>
       <MainHead homeData={homeData} />
       <Header />
