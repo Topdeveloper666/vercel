@@ -82,11 +82,11 @@ export default function Blog({ bloglist, blogSingle }) {
           content="index, follow"
           data-react-helmet="true"
         ></meta>
-        <meta
+        {/* <meta
           httpEquiv="Content-Type"
           content="text/html; charset=utf-8"
           data-react-helmet="true"
-        ></meta>
+        ></meta> */}
         <meta
           name="language"
           content="English"

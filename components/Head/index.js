@@ -17,7 +17,6 @@ export const MainHead = ({ homeData }) => {
                 content="GlamCode Trending  Salon at Home which provides Salon Services for all the Beauty"
                 data-react-helmet="true"
             ></meta>
-            <meta http-equiv="content-language" content="en-US"></meta>
 
             <meta
                 name="keywords"
@@ -30,11 +29,11 @@ export const MainHead = ({ homeData }) => {
                 content="index, follow"
                 data-react-helmet="true"
             ></meta>
-            <meta
+            {/* <meta
                 httpEquiv="Content-Type"
                 content="text/html; charset=utf-8"
                 data-react-helmet="true"
-            ></meta>
+            ></meta> */}
             <meta name="language" content="English" data-react-helmet="true"></meta>
             <meta
                 name="revisit-after"

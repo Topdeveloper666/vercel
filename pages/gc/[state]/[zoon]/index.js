@@ -75,11 +75,11 @@ export default function multslug({ servicesData }) {
                         content="index, follow"
                         data-react-helmet="true"
                     ></meta>
-                    <meta
+                    {/* <meta
                         httpEquiv="Content-Type"
                         content="text/html; charset=utf-8"
                         data-react-helmet="true"
-                    ></meta>
+                    ></meta> */}
                     <meta name="language" content="English" data-react-helmet="true"></meta>
                     <meta
                         name="revisit-after"
