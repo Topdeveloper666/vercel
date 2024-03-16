@@ -7,6 +7,10 @@ module.exports = {
     compiler: {
         styledComponents: true,
     },
+    i18n: {
+        locales: ['en-US'], // Use ISO standard language codes
+        defaultLocale: 'en-US',
+    },
 
     images: {
         // loader: "custom",
