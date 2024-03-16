@@ -3,7 +3,7 @@ import Head from "next/head";
 export const MainHead = ({ homeData }) => {
     return (
         <Head>
-            <title>Sophisticated Salon at Home for Beauty Session blend with Luxury</title>
+            <title>Sophisticated Salon at Home for Beauty Session with Luxury</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta
