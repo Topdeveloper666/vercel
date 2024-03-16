@@ -27,7 +27,7 @@ const Header = dynamic(() => import("../components/Header"));
 
 
 export default function Home({ slider, homeData = {} }) {
-  const { locations, maincategory, services, review, faqs, home } = homeData;
+  const { locations, maincategory, services, review, home } = homeData;
   const dispatch = useDispatch();
 
   useEffect(() => {
