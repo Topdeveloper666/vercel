@@ -18,7 +18,7 @@ const Scratch = ({
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
-            <p>Congratulation! Avail Cashback points in your Next Booking ,once you complete the present Booking</p>
+            <p>Congratulation! Avail Cashback points in your Next Booking ,once you complete the present Booking.</p>
             {showCongrats && (
               <>
                 <div onClick={closeModal} className="image-d-location-close">
