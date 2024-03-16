@@ -10,7 +10,6 @@ import Layout from "../components/Layout/index";
 import "font-awesome/css/font-awesome.css";
 import "swiper/css";
 import Script from "next/script";
-import { Html } from 'next/document';
 import persistor from "../store/store";
 import "react-toastify/dist/ReactToastify.css";
 import Head from "next/head";
@@ -63,7 +62,7 @@ function MyApp({ Component, pageProps, name }) {
     hotjar.initialize(3302739, 1)
   }, []);
   return (
-    <Html lang="en-US">
+    <>
       <Script
         strategy="afterInteractive"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTonsNxc9VkjHdsdxK_2t6MIAPkDQ5dpw&libraries=places"
@@ -184,7 +183,7 @@ function MyApp({ Component, pageProps, name }) {
         </Provider>
       </React.Fragment>
 
-    </Html>
+    </>
   );
 }
 
