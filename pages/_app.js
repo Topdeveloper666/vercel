@@ -108,21 +108,21 @@ function MyApp({ Component, pageProps, name }) {
           key="canonical"
         />
 
-        <link rel="preconnect" href="https://admin.glamcode.in/user-uploads/carousel-images/21e7bb521040147483e85335fc32ed3e.png.webp" />
-        <link
+        {/* <link rel="preconnect" href="https://admin.glamcode.in/user-uploads/carousel-images/21e7bb521040147483e85335fc32ed3e.png.webp" /> */}
+        {/* <link
           rel="preload"
           as="image"
           type="image/webp"
-          href="https://admin.glamcode.in/user-uploads/carousel-images/21e7bb521040147483e85335fc32ed3e.png.webp" ></link>
+          href="https://admin.glamcode.in/user-uploads/carousel-images/21e7bb521040147483e85335fc32ed3e.png.webp" ></link> */}
 
-        <link
+        {/* <link
           rel="preload"
           as="image"
           type="image/webp"
           href="https://admin.glamcode.in/user-uploads/carousel-images/fbe24ff0dc054411be4ea92e498d3399.png.webp" ></link>
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" /> */}
         <link rel="shortcut icon" href={Logo.src} />
 
         {/* <script
