@@ -275,7 +275,6 @@ function Header() {
               </li>
               <li className="list-item">
                 <a
-                  area-label="mobile menu offcanvas svg icon"
                   onClick={showSidebar}
                   className="btn btn--size-33-33 btn--center btn--round btn--color-radical-red btn--bg-white btn--box-shadow main-menu offcanvas-toggle offside-menu"
                 >
