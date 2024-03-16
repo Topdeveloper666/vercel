@@ -284,7 +284,7 @@ export default function Categoryslug({ servicesData }) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="col-5 p-0 mb-md-0 mb-3" style={{ display: 'flex', flexDirection: 'column' }}>
+                                  <div className="col-5 p-0 mb-md-0 mb-3">
                                     <div className="addCartResp classAddDown" style={{ marginBottom: '30px' }}>
                                       <img
                                         className="d-md-none d-block imageies"
@@ -293,8 +293,8 @@ export default function Categoryslug({ servicesData }) {
                                         height={200}
                                         width={200}
                                       />
+                                      <AddToCart data={y} />
                                     </div>
-                                    <AddToCart data={y} />
                                   </div>
                                   <div className="col-12">
                                     <div className="lineDiv mt-4" />
