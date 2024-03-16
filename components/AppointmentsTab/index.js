@@ -7,7 +7,7 @@ const Index = () => {
       <div className="appointments-card">
         <div className="appointments-card-head">
           <p>Air Brush Makeup</p>
-          <p>Rs6999/-</p>
+          <p>₹6999/-</p>
         </div>
         <div className="appointments-card-head2">
           <p>Order Date: 18 Oct 2022</p>
@@ -38,8 +38,8 @@ const Index = () => {
           </div>
           <div className="appointments-card-data-in">
             <div>
-              <p className="appointments-p">Urvashi</p> <p>Rs999</p>
-              <p>Rs1198</p> <p>Rs1198</p>
+              <p className="appointments-p">Urvashi</p> <p>₹999</p>
+              <p>₹1198</p> <p>₹1198</p>
             </div>
           </div>
           <div>
@@ -47,8 +47,8 @@ const Index = () => {
             <p>Transport Charges</p>
           </div>
           <div>
-            <p>Rs1146</p>
-            <p>Rs1146</p>
+            <p>₹1146</p>
+            <p>₹1146</p>
           </div>
         </div>
 
@@ -68,8 +68,8 @@ const Index = () => {
               <div className="appointments-card-part-2">
                 <h4>Air Brush Makeup</h4>
                 <div className="appointments-card-btn-line">
-                  <p className="appointments-card-btn-line-d">Rs13998</p>
-                  <p className="appointments-card-btn-line-b">Rs6999/-</p>
+                  <p className="appointments-card-btn-line-d">₹13998</p>
+                  <p className="appointments-card-btn-line-b">₹6999/-</p>
                   <p className="appointments-card-btn-line-f">50%</p>
                 </div>
                 <div className="appointments-card-list-line">
@@ -86,23 +86,23 @@ const Index = () => {
               <div>
                 <div className="appointments-part-b">
                   <p>Sub Total</p>
-                  <p>Rs1698/-</p>
+                  <p>₹1698/-</p>
                 </div>
                 <div className="appointments-part-b">
                   <p>Safety & Hygine*</p>
-                  <p>Rs1698/-</p>
+                  <p>₹1698/-</p>
                 </div>
                 <div className="appointments-part-b">
                   <p>Transport Fee</p>
-                  <p>Rs1698/-</p>
+                  <p>₹1698/-</p>
                 </div>
                 <div className="appointments-part-b">
                   <p>GST (18%) </p>
-                  <p>Rs1698/-</p>
+                  <p>₹1698/-</p>
                 </div>
               </div>
               <hr className="appointments-part-hr" />
-              <h3 className="appointments-part-b-h3">Total Amount: Rs6999/-</h3>
+              <h3 className="appointments-part-b-h3">Total Amount: ₹6999/-</h3>
               <div className="appointments-part-b-div-p">
                 <p>A small fee towards 100% care for you!</p>
                 <span>

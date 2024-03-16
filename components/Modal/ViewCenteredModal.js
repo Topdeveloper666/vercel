@@ -75,15 +75,15 @@ export default function ViewCenteredModal(props) {
                     {props.datato.name}
                   </h4>
                 </div>
-
+               
                 <div className="d-flex flex-row align-items-center">
-                  <div className="offerPrice fs-5">
-                    Rs {Math.round(props.datato.discounted_price)}
+                <div className="offerPrice fs-5">
+                    ₹ {Math.round(props.datato.discounted_price)}
                   </div>
                   <div className="pe-2 fs-6 price Price ms-2">
-                    Rs {Math.round(props.datato.price)}
+                    ₹ {Math.round(props.datato.price)}
                   </div>
-
+                 
                   <div className="px-1 discountTitle ms-2">
                     {props.datato.discount}% Off
                   </div>
@@ -103,12 +103,12 @@ export default function ViewCenteredModal(props) {
 
                 {/* <div className="product-details-action">
                    <div className="product-item prices">
-                                        <span className="price">Rs {Math.round(props.datato.discounted_price)}</span>
+                                        <span className="price">₹ {Math.round(props.datato.discounted_price)}</span>
                                         <span
                                             className="price-old"
                                             style={{ textDecorationLine: "line-through" }}
                                         >
-                                            Rs {Math.round(props.datato.price)}
+                                            ₹ {Math.round(props.datato.price)}
                                         </span>
                                     </div> */}
                 {/* <div className="product-details-cart-wishlist" style={{ marginLeft: '35px' }}>

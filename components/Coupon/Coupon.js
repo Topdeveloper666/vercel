@@ -32,7 +32,7 @@ export default function Coupon(props) {
           // if (props.specialCoupon != undefined) {
           //   data = [...res.couponData, ...props.specialCoupon]
           // } else {
-          data = [...res.couponData]
+            data = [...res.couponData]
           // }
           setCouponData(data);
         } else {
@@ -149,9 +149,9 @@ export default function Coupon(props) {
                     </div>
                     <div className="col-lg-7 col-9">
                       <p className="title offer-title">{e?.title}</p>
-                      <p className="disacount-amount pt-2">Upto Rs500 off</p>
+                      <p className="disacount-amount pt-2">Upto ₹500 off</p>
                       <p className="save-amount pt-2">
-                        Save Rs{Math.round(e?.amount)} on this order
+                        Save ₹{Math.round(e?.amount)} on this order
                       </p>
                       <p className="t-and-c">View T&C</p>
                     </div>
@@ -175,15 +175,15 @@ export default function Coupon(props) {
                       {!coup.applicable && coup.message}
                     </div>
                   </div> */}
-                  <div className='px-3 py-3 newCouponModal'>
-                    <div>
-                      <div className=' justify-content-between'>
+                    <div className='px-3 py-3 newCouponModal'>
+                      <div>
+                        <div className=' justify-content-between'>
                         <h2>{e.percent}% OFF</h2>
-                      </div>
-                      <div className='couponMainTextColor'>Minimum Purchase Amount Rs{e.minimum_purchase_amount}</div>
-                      <div className='newCouponModal couponTitle d-flex align-items-center px-1'>{e.title}</div>
-                      <hr />
-                      <div className='d-flex align-items-center justify-content-center couponApply couponMainTextColor' onClick={() => {
+                        </div>
+                        <div className='couponMainTextColor'>Minimum Purchase Amount ₹{e.minimum_purchase_amount}</div>
+                        <div className='newCouponModal couponTitle d-flex align-items-center px-1'>{e.title}</div>
+                        <hr/>
+                        <div className='d-flex align-items-center justify-content-center couponApply couponMainTextColor' onClick={() => {
                         if (total >= e.minimum_purchase_amount) {
                           setCoupon(e);
                           handleClose();
@@ -194,10 +194,10 @@ export default function Coupon(props) {
                           );
                         }
                       }}>
-                        TAP TO APPLY
+                          TAP TO APPLY
+                        </div>
                       </div>
                     </div>
-                  </div>
                   {i === coupons.length - 1 ? '' : <hr />}
                 </div>
               );

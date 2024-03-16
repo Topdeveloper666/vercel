@@ -118,7 +118,7 @@ export default function Confirmation() {
             {/* <p className="subtitle-all">
               if you choose to cancel, you can do it anytime before 4 Hours of
               the appointment time. Post which a cancellation fee will we
-              charged of Rs200
+              charged of ₹200
             </p> */}
             <div className="inside-section-bg container">
               <p className="thinsidetext">

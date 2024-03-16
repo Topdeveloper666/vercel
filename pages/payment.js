@@ -430,9 +430,9 @@ function Payment() {
                     <div className="d-flex justify-content-between align-items-center mt-3">
                       <div className="d-flex flex-row align-items-center">
                         <div className="p-rl-2 Price ps-0">
-                          Rs {Math.round(dataFromCashbackService.price)}
+                          ₹ {Math.round(dataFromCashbackService.price)}
                         </div>
-                        <div className="offerPrice">Effective Price Rs 00</div>
+                        <div className="offerPrice">Effective Price ₹ 00</div>
                         <div className="px-1 discountTitle">100%</div>
                       </div>
                       <ViewDetails
@@ -486,10 +486,10 @@ function Payment() {
                         <div className="d-flex justify-content-between align-items-center mt-3">
                           <div className="d-flex flex-row align-items-center">
                             <div className="p-rl-2 Price">
-                              Rs {Math.round(item.price)}
+                              ₹ {Math.round(item.price)}
                             </div>
                             <div className="offerPrice">
-                              Rs {Math.round(item.discounted_price)}
+                              ₹ {Math.round(item.discounted_price)}
                             </div>
                             <div className="px-1 discountTitle">
                               {item.discount}%
@@ -708,7 +708,7 @@ function Payment() {
               <div className="offerSuccess mt-3 d-flex align-items-center px-4">
                 <Image src={celebration.src} width={28} height={28} />
                 <h6 className="p-2 m-0">
-                  Yay! you have saved Rs&nbsp;{Math.round(coupon_amount)} on
+                  Yay! you have saved ₹&nbsp;{Math.round(coupon_amount)} on
                   final bill
                 </h6>
               </div>
@@ -784,7 +784,7 @@ function Payment() {
                         {" "}
                         Added Cashback Service Fee
                       </p>
-                      <p className="m-1 font-family-alata">Rs&nbsp;00</p>
+                      <p className="m-1 font-family-alata">₹&nbsp;00</p>
                     </div>
                   </div>
                 )}
@@ -796,7 +796,7 @@ function Payment() {
                       <div className="d-flex flex-row justify-content-between-flex">
                         <p className="m-1 font-family-alata">Total Amount</p>
                         <p className="m-1 font-family-alata">
-                          Rs&nbsp;{finalTotal + Math.round(coupon_amount)}
+                          ₹&nbsp;{finalTotal + Math.round(coupon_amount)}
                         </p>
                       </div>
                     </div>
@@ -806,7 +806,7 @@ function Payment() {
                       <div className="d-flex flex-row justify-content-between-flex">
                         <p className="m-1 font-family-alata">Coupon</p>
                         <p className="m-1 font-family-alata">
-                          -Rs&nbsp;{Math.round(coupon_amount)}
+                          -₹&nbsp;{Math.round(coupon_amount)}
                         </p>
                       </div>
                     </div>

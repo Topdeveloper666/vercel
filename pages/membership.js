@@ -23,7 +23,7 @@ const refer = () => {
           <IoIosArrowBack size={35} className="refer-arrow-icon" />
           <h2 className="refer-title-d">Glamcode Membership</h2>
         </div>
-        <div className="testimonial " style={{ textAlign: 'center' }}>
+        <div className="testimonial " style={{textAlign: 'center'}}>
           <Image
             src={Ern.src}
             width={1080}
@@ -86,8 +86,8 @@ const refer = () => {
             <div>
               <button type="button" className="membership-btn-1">
                 Join at a special price of just <br />{" "}
-                <span className="span-delate">Rs999</span>
-                <span className="span-bold">Rs999</span>/ For 6 Months
+                <span className="span-delate">₹999</span>
+                <span className="span-bold">₹999</span>/ For 6 Months
               </button>
             </div>
 
@@ -121,8 +121,8 @@ const refer = () => {
             className="membership-btn-1 membership-btn-1-sm "
           >
             Join at a special price of just <br />
-            <span className="span-delate">Rs999</span>
-            <span className="span-bold">Rs999</span>/ For 6 Months
+            <span className="span-delate">₹999</span>
+            <span className="span-bold">₹999</span>/ For 6 Months
           </button>
         </div>
         <div className="membership-text-card-sm">

@@ -614,11 +614,11 @@ function Footer() {
               {dif > 0 ? (
                 <span
                   style={{ paddingLeft: "6px" }}
-                >{` Add Rs${dif} more to avail coupon`}</span>
+                >{` Add ₹${dif} more to avail coupon`}</span>
               ) : dif < 0 ? (
                 <span>You can now avail coupon</span>
               ) : (
-                <span>{`Minimum Booking Amount :- Rs  ${dataloction?.loc_min_booking_amount}`}</span>
+                <span>{`Minimum Booking Amount :- ₹  ${dataloction?.loc_min_booking_amount}`}</span>
               )}
             </p>
           </div>
@@ -626,10 +626,10 @@ function Footer() {
             <div className="d-flex justify-content-between">
               <div className="d-flex flex-column-m">
                 <p className="textHead">
-                  Total Price Rs {total} {/*{dif > 0 && (*/}
+                  Total Price ₹ {total} {/*{dif > 0 && (*/}
                   {/*  <span*/}
                   {/*    style={{ paddingLeft: "6px" }}*/}
-                  {/*  >{` Add Rs${dif} more to avail coupon`}</span>*/}
+                  {/*  >{` Add ₹${dif} more to avail coupon`}</span>*/}
                   {/*)}*/}
                 </p>
               </div>
