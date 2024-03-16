@@ -112,7 +112,7 @@ export default function Home({ slider, homeData = {} }) {
       <PreferredPackages data={services} />
       <CustomerTestimonials data={review} />
 
-      <Faqs data={faqs} />
+      {/* <Faqs data={faqs} /> */}
 
       <div className="col-12 " style={{ marginTop: "50px" }} hidden={_isMobile}>
         <hr

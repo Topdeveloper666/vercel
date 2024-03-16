@@ -14,7 +14,6 @@ export default function Faqs({ data }) {
                 <Accordion defaultActiveKey="0">
                     <Row>
                         {data?.map((item, index) => {
-                            if (item.id == 87) return <></>
                             return (
                                 <Col md="6" key={index}>
                                     <Accordion.Item eventKey={index}>
