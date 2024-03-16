@@ -252,7 +252,7 @@ function Checkout() {
                         {d === "01" || index === 0 ? (
                           <div className="month-name" style={{ color: monthBackgroundColor }}>{m}</div>
                         ) : (
-                          <div></div>
+                          <></>
                         )}
                         <div
                           className={`date-card`}

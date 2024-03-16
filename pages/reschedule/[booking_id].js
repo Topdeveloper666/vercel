@@ -293,7 +293,7 @@ export default function Reschedule() {
                         {d === '01' || index === 0 ? (
                           <div className="month-name">{m}</div>
                         ) : (
-                          <div></div>
+                          <></>
                         )}
                         <div
                           className={`date-card`}
