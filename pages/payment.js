@@ -45,7 +45,7 @@ function Payment() {
   const [couponModal, setCouponModal] = useState(false);
   const [sending, setSending] = useState(false);
   const [pType, setPType] = useState("cash");
-  const [checkedd, setChekeddd] = useSdtate(false);
+  const [checkedd, setChekedd] = useState(false);
   const [update, setUpdate] = useState(1);
   const [changeAddressModal, setChangeAddressModal] = useState(false);
   const [showAddressModal, setShowAddressModal] = useState(false);
