@@ -150,7 +150,7 @@ const Item = ({ e, user, getBookings, update = false }) => {
         item={e}
       />
       {/* <div className="servicesMD p-3   servicesMD-bg-color-1 d-flex justify-content-between  h-100 flex-column">
-            <h5 className="text-center">{e.service_name}</h5>
+            <p className="text-center">{e.service_name}</p>
             <div className="d-flex flex-row justify-content-between-flex">
                 <p className="booking-title">Booking Date</p>
                 <p className="booking-desc">{moment(e.booking_time).format('MM/DD/YYYY')}</p>
@@ -383,7 +383,7 @@ const ItemS = ({ e }) => {
                       className="textPletter"
                       style={{ marginBottom: "0px", display: "flex" }}
                     >
-                      <h5>₹ {e.amount}/-</h5>
+                      <p>₹ {e.amount}/-</p>
                       <del style={{ color: "gray" }}>₹ {e.price}/-</del>
                     </p>
 
@@ -434,7 +434,7 @@ const ItemS = ({ e }) => {
               className="textPletter"
               style={{ marginBottom: "0px", display: "flex" }}
             >
-              <h5>₹ {e.amount}/-</h5>
+              <p>₹ {e.amount}/-</p>
               <del style={{ color: "gray" }}>₹ {e.price}/-</del>
             </p>
             <Image
@@ -485,7 +485,7 @@ const ItemS = ({ e }) => {
               className="textPletter"
               style={{ marginBottom: "0px", display: "flex" }}
             >
-              <h5>₹ {e.amount}/-</h5>
+              <p>₹ {e.amount}/-</p>
               <del style={{ color: "gray" }}>₹ {e.price}/-</del>
             </p>
           </div> */}

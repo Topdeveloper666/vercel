@@ -79,7 +79,7 @@ export default function Serving(props) {
                           </div>
                         </div>
                         <div className="salone-all-category-text">
-                          <h5>{x.city}</h5>
+                          <p>{x.city}</p>
                         </div>
                       </div>
                     </div>

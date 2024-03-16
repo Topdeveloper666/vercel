@@ -117,7 +117,7 @@ function CustomerTestimonials(props) {
                         />
                       </div>
                       <div className="card2-css pt-5">
-                        <h5 className="font-weight-bold">{x.name}</h5>
+                        <p className="font-weight-bold">{x.name}</p>
                         <ul className="list-unstyled d-flex justify-content-center">
                           {renderStars}
                         </ul>

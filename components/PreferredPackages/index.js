@@ -94,15 +94,15 @@ const PreferredPackages = ({ setting, data }) => {
                       </Card.Text>
                     </div>
                     <div className="d-flex justify-content-around align-items-center">
-                      <h5 className="fw-semibold extra-small-text">
+                      <p className="fw-semibold extra-small-text">
                         {pack.discount}% OFF
-                      </h5>
-                      <h5 className="fw-semibold save-text rounded-1 mx-1">
+                      </p>
+                      <p className="fw-semibold save-text rounded-1 mx-1">
                         Save ₹ {pack.price - pack.discounted_price}
-                      </h5>
-                      <h5 className="fw-semibold extra-small-text">
+                      </p>
+                      <p className="fw-semibold extra-small-text">
                         ₹ {pack.discounted_price}
-                      </h5>
+                      </p>
                     </div>
                   </Card.Body>
                   <Card.Footer className="bg-white py-md-3 d-flex justify-content-center justify-content-md-around card-footer">

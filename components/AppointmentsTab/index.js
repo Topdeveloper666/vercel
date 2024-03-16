@@ -53,7 +53,7 @@ const Index = () => {
         </div>
 
         <div className="appointments-card-A">
-          <h5 className="appointments-card-part-light">SERVICE CART</h5>
+          <p className="appointments-card-part-light">SERVICE CART</p>
           <div className="appointments-card-flex">
             <div className="appointments-card-main">
               <div className="appointments-img">

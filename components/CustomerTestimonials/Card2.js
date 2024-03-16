@@ -36,7 +36,7 @@ export const InnerCard = () => {
             />123
           </div>
           <div className="card2-css pt-5">
-            <h5 className="font-weight-bold">Teresa May</h5>
+            <p className="font-weight-bold">Teresa May</p>
             {/* <h6 className="font-weight-bold my-3">Founder at ET Company</h6> */}
             <MDBTypography
               listUnStyled
