@@ -103,8 +103,7 @@ export default function Confirmation() {
           {!isScratched && (
             <>
               <p className="thankssubtitle">
-                Congratulations! You've unlocked an exclusive Cashback
-                ScratchCard.
+                Avail Cashback points in your Next Booking ,once you complete the present Booking.
               </p>
             </>
           )}

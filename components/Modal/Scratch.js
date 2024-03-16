@@ -21,7 +21,10 @@ const Scratch = ({
             <p>You Got Scratch Card As You Service is Completed</p>
             {showCongrats && (
               <>
-                <div onClick={closeModal}>
+                <div onClick={closeModal} className="image-d-location-close">
+                  x
+                </div>
+                <div>
                   <Image
                     width={40}
                     height={40}
@@ -86,20 +89,18 @@ function App({
   const [scratchedText, setScratchedText] = useState("Scratching");
   const handleScratchComplete = () => {
     console.log("The card is now clear!", contentInScratchCard);
-    setScratchedText(`<img width="140px" height="140px" src="${
-      contentInScratchCard?.type == "service"
-        ? contentInScratchCard.service_image_url
-        : "https://img.icons8.com/ultraviolet/40/approval.png"
-    }" alt="approval" />
-    <p>${contentInScratchCard?.type}: ${
-      contentInScratchCard?.type == "service"
+    setScratchedText(`<img width="140px" height="140px" src="${contentInScratchCard?.type == "service"
+      ? contentInScratchCard.service_image_url
+      : "https://img.icons8.com/ultraviolet/40/approval.png"
+      }" alt="approval" />
+    <p>${contentInScratchCard?.type}: ${contentInScratchCard?.type == "service"
         ? contentInScratchCard?.name
         : contentInScratchCard?.type == "cashback"
-        ? contentInScratchCard?.amount + " " + contentInScratchCard?.unit
-        : contentInScratchCard?.type == "coupon"
-        ? contentInScratchCard?.title
-        : ""
-    }</p>`);
+          ? contentInScratchCard?.amount + " " + contentInScratchCard?.unit
+          : contentInScratchCard?.type == "coupon"
+            ? contentInScratchCard?.title
+            : ""
+      }</p>`);
     setShowCongrats(true);
     if (
       location.pathname == "/confirmation/" ||
