@@ -41,6 +41,7 @@ function Payment() {
     return state.commonData.common;
   });
   const [total, setTotal] = React.useState(0);
+  const [discountedPrice, setDiscountedPrice] = useState(0);
   const [couponModal, setCouponModal] = useState(false);
   const [sending, setSending] = useState(false);
   const [pType, setPType] = useState("cash");
@@ -58,11 +59,13 @@ function Payment() {
   const [walletCashback, setWalletCashback] = useState({});
 
   useEffect(() => {
-    var total = 0;
+    var total = 0, discount = 0;
     for (let i = 0; i < cart.length; i++) {
       total += parseInt(cart[i].sum);
+      discount += parseInt(cart[i].discounted_price);
     }
     setTotal(total);
+    setDiscountedPrice(discount);
 
     if (total < coupon_min) {
       emptyCoupon();
@@ -751,7 +754,7 @@ function Payment() {
                 <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
                     <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
-                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>1097</p>
+                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>{discountedPrice}</p>
                   </div>
                 </div>
 
