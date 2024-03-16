@@ -754,7 +754,7 @@ function Payment() {
                 <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
                     <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
-                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>{discountedPrice}</p>
+                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
                   </div>
                 </div>
 
