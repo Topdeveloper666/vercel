@@ -431,7 +431,6 @@ function Header() {
                   transform="translate(-11.251 -6.194)"
                 ></path>
               </svg>
-              <div></div>
             </button>
             <div className="offcanvas-header flex-end">
               <div
