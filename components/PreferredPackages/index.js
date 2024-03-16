@@ -87,7 +87,7 @@ const PreferredPackages = ({ setting, data }) => {
                   <Card.Body className="card-body p-2 p-md-4">
                     <div className="d-flex justify-content-around">
                       <Card.Text className="fw-semibold card-text mb-2 mb-md-3 Price">
-                        ₹ {pack.price}
+                        Rs {pack.price}
                       </Card.Text>
                       <Card.Text className="fw-semibold card-text mb-2 mb-md-3">
                         {pack.time} MINS
@@ -98,10 +98,10 @@ const PreferredPackages = ({ setting, data }) => {
                         {pack.discount}% OFF
                       </h5>
                       <h5 className="fw-semibold save-text rounded-1 mx-1">
-                        Save ₹ {pack.price - pack.discounted_price}
+                        Save Rs {pack.price - pack.discounted_price}
                       </h5>
                       <h5 className="fw-semibold extra-small-text">
-                        ₹ {pack.discounted_price}
+                        Rs {pack.discounted_price}
                       </h5>
                     </div>
                   </Card.Body>

@@ -254,7 +254,7 @@ export default function Categoryslug({ servicesData }) {
                                       style={{ margin: "4% 0.625rem -2% 0%" }}
                                     >
                                       <div className="offerPrice">
-                                        ₹ {Math.round(y.discounted_price)}
+                                        Rs {Math.round(y.discounted_price)}
                                       </div>
                                     </div>
                                     <div
@@ -262,7 +262,7 @@ export default function Categoryslug({ servicesData }) {
                                       style={{ margin: "4% 0.625rem -2% 0%" }}
                                     >
                                       <div className="p-rl-2 Price text-secondary ps-0">
-                                        ₹ {Math.round(y.price)}
+                                        Rs {Math.round(y.price)}
                                       </div>
                                       <div className="px-1 discountTitle">
                                         {y.discount}% Off
@@ -343,10 +343,10 @@ export default function Categoryslug({ servicesData }) {
                                       </div>
                                       <div className="d-flex flex-row align-items-center flex-wrap mt-2">
                                         <div className="pe-1 Price price-m">
-                                          ₹ {Math.round(y.price)}
+                                          Rs {Math.round(y.price)}
                                         </div>
                                         <div className="offerPrice price-m">
-                                          ₹ {Math.round(y.discounted_price)}
+                                          Rs {Math.round(y.discounted_price)}
                                         </div>
                                         <div className="px-1 discountTitle-m me-4">
                                           {y.discount}%

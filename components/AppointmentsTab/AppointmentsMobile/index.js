@@ -63,7 +63,7 @@ const Index = () => {
 
         <div className="appointments-mobile-item just-border">
           <h6>TOTAL</h6>
-          <h6>₹6999/-</h6>
+          <h6>Rs6999/-</h6>
         </div>
       </div>
       <div className="appointments-part-b-div-p just-margin-bottom">

@@ -121,7 +121,7 @@ const ReferAndEarn = () => {
         {bannerData?.map((banner, i) => (
           <Card
             className="border-0 rounded-3 px-2 card refer-earn-img position-relative"
-            key={`banner_${banner.image}_${i+1}`}
+            key={`banner_${banner.image}_${i + 1}`}
           >
             <Link href="/">
               <div className="img-container">
@@ -143,7 +143,7 @@ const ReferAndEarn = () => {
               {/* <div className="position-absolute top-0 left-0 p-3 text-white">
                 <h6 className="fs-5 fw-bold m-0">Refer a Friend</h6>
                 <p className="m-0">to download GC App and earn</p>
-                <span className="fs-5 fw-bold"> ₹ 100</span>
+                <span className="fs-5 fw-bold"> Rs 100</span>
                 <button
                   className="d-block border-0 text-white px-2 py-1 mt-3 fw-normal"
                   style={{ background: '#0000004c' }}

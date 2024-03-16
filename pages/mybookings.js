@@ -165,7 +165,7 @@ const Item = ({ e, user, getBookings, update = false }) => {
             </div>
             <div className="d-flex flex-row justify-content-between-flex">
                 <p className="booking-title">Total Amount</p>
-                <p className="booking-desc">₹{" "}{e.total_amount}</p>
+                <p className="booking-desc">Rs{" "}{e.total_amount}</p>
             </div>
             <div className="d-flex flex-row justify-content-between-flex">
                 <p className="booking-title">Order Status</p>
@@ -184,7 +184,7 @@ const Item = ({ e, user, getBookings, update = false }) => {
         </div> */}
       <div className="h3 pt-2 pb-3 mb-0 bookingiddata">
         <p style={{ marginBottom: "0px" }}>Order Id : GC-{e.id}</p>
-        <p style={{ marginBottom: "0px" }}>₹ {e.amount_to_pay}/-</p>
+        <p style={{ marginBottom: "0px" }}>Rs {e.amount_to_pay}/-</p>
       </div>
       <div className="h6 pt-3 pb-3 mb-0 bookingiddata2">
         <p style={{ marginBottom: "0px" }}>
@@ -383,8 +383,8 @@ const ItemS = ({ e }) => {
                       className="textPletter"
                       style={{ marginBottom: "0px", display: "flex" }}
                     >
-                      <h5>₹ {e.amount}/-</h5>
-                      <del style={{ color: "gray" }}>₹ {e.price}/-</del>
+                      <h5>Rs {e.amount}/-</h5>
+                      <del style={{ color: "gray" }}>Rs {e.price}/-</del>
                     </p>
 
                   </Grid>
@@ -434,8 +434,8 @@ const ItemS = ({ e }) => {
               className="textPletter"
               style={{ marginBottom: "0px", display: "flex" }}
             >
-              <h5>₹ {e.amount}/-</h5>
-              <del style={{ color: "gray" }}>₹ {e.price}/-</del>
+              <h5>Rs {e.amount}/-</h5>
+              <del style={{ color: "gray" }}>Rs {e.price}/-</del>
             </p>
             <Image
               src={`https://admin.glamcode.in/user-uploads/service/${e.id}/${e.default_image}`}
@@ -485,8 +485,8 @@ const ItemS = ({ e }) => {
               className="textPletter"
               style={{ marginBottom: "0px", display: "flex" }}
             >
-              <h5>₹ {e.amount}/-</h5>
-              <del style={{ color: "gray" }}>₹ {e.price}/-</del>
+              <h5>Rs {e.amount}/-</h5>
+              <del style={{ color: "gray" }}>Rs {e.price}/-</del>
             </p>
           </div> */}
         </div>

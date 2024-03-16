@@ -133,7 +133,7 @@ const Item = ({ e }) => {
                         </svg> {e.time} {e.time_type}</p>
                     </div>
                     <div className="h6 pt-3 pb-3 mb-0" style={{ display: "flex", justifyContent: "space-between", paddingLeft: "0", padding: "15px" }}>
-                        <p className="textPletter" style={{ marginBottom: "0px", display: 'flex' }}><h5>₹ {e.amount}/-</h5><del style={{ color: 'gray' }}>₹ {e.price}/-</del></p>
+                        <p className="textPletter" style={{ marginBottom: "0px", display: 'flex' }}><h5>Rs {e.amount}/-</h5><del style={{ color: 'gray' }}>Rs {e.price}/-</del></p>
                     </div>
                     <div className="h6 pt-3 pb-3 mb-0" style={{ display: 'flex', justifyContent: 'space-between', padding: '15px', paddingLeft: '0' }}>
                         <button style={{ background: '#000', border: 'none', marginRight: '10px' }} className="btn btn-danger" >Status - {e.status}</button>
