@@ -29,12 +29,12 @@ export default function Knowmore({ data }) {
                             style={{
                                 padding: 30,
                                 fontFamily: "Alata",
-                                fontStyle: "normals",
+                                fontStyle: "normal",
                                 fontSize: 16,
                                 textAlign: "center",
                             }}
                         />{" "}
-                    </Container> 
+                    </Container>
                     {/* cannot get desc from api */}
                 </>
             ) : (
