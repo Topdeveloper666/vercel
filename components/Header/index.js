@@ -127,10 +127,10 @@ function Header() {
             </Col>
             <Col lg="7" md="12" className="menutop">
               <div className="d-flex gap-4 justify-content-end ">
-                <a href="/" className="btn btn-outline-light bgsalon" alt="home">
+                <a href="/" className="btn btn-outline-light bgsalon">
                   Home
                 </a>
-                <a href="/blogs" className="btn btn-outline-light bgsalon" alt="blogs">
+                <a href="/blogs" className="btn btn-outline-light bgsalon">
                   Blogs
                 </a>
 
@@ -138,7 +138,6 @@ function Header() {
                   className="btn btn-outline-light bgsalon"
                   href="https://play.google.com/store/apps/details?id=in.glamcode.app"
                   target="_blank"
-                  alt="use_app"
                 >
                   <i className="fa fa-download mr-2"></i>&nbsp;Use App
                 </a>
