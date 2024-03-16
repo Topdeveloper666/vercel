@@ -18,7 +18,7 @@ const Scratch = ({
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
-            <p>You Got Scratch Card As You Service is Completed</p>
+            <p>Avail Cashback points in your Next Booking ,once you complete the present Booking</p>
             {showCongrats && (
               <>
                 <div onClick={closeModal} className="image-d-location-close">
