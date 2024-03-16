@@ -45,7 +45,7 @@ function Payment() {
   const [couponModal, setCouponModal] = useState(false);
   const [sending, setSending] = useState(false);
   const [pType, setPType] = useState("cash");
-  const [checked, setCheked] = useState(true);
+  const [checkedd, setChekeddd] = useSdtate(false);
   const [update, setUpdate] = useState(1);
   const [changeAddressModal, setChangeAddressModal] = useState(false);
   const [showAddressModal, setShowAddressModal] = useState(false);
@@ -653,7 +653,7 @@ function Payment() {
                   className="background-deflex"
                   style={{ background: 'white' }}
                   onClick={() => {
-                    setCheked(!checked)
+                    setChekedd(!checkedd)
                   }}
                 >
                   <div
@@ -668,7 +668,7 @@ function Payment() {
                       </div>
                       <div style={{ marginLeft: "10px" }}>{`Use Wallet (Glam Coin - ${walletCashback?.wallet_points ? walletCashback?.wallet_points : 0})`}</div>
                     </div>
-                    <Checkbox {...label} color="secondary" checked={checked} />
+                    <Checkbox {...label} color="secondary" checked={checkedd} />
                   </div>
                 </div>
               </div>
