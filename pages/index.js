@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Slider from "../components/Slider/homeSlider";
 import Maincategory from "../components/Maincategory/maincategory";
 import Maincategorymobile from "../components/Maincategory/Maincategorymobile";
-import Faqs from "../components/Faqs/index";
+// import Faqs from "../components/Faqs/index";
 import Knowmore from "../components/Knowmore";
 import { menuSave, mainLocation } from "../store/actions/index";
 import PreferredPackages from "../components/PreferredPackages";

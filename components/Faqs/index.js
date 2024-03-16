@@ -13,7 +13,7 @@ export default function Faqs({ data }) {
                 </div>
                 <Accordion defaultActiveKey="0">
                     <Row>
-                        {data?.map((item, index) => {
+                        {/* {data?.map((item, index) => {
                             return (
                                 <Col md="6" key={index}>
                                     <Accordion.Item eventKey={index}>
@@ -25,7 +25,7 @@ export default function Faqs({ data }) {
                                     </Accordion.Item>
                                 </Col>
                             );
-                        })}
+                        })} */}
 
                         {/* <Accordion.Item eventKey="1">
                         <Accordion.Header>Accordion Item #2</Accordion.Header>
