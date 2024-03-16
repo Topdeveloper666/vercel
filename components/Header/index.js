@@ -460,7 +460,6 @@ function Header() {
                   viewBox="0 0 5.973 10.449"
                 >
                   <path
-                    id="Icon_ionic-ios-arrow-back"
                     data-name="Icon ionic-ios-arrow-back"
                     d="M13.051,11.417,17,7.466a.747.747,0,0,0-1.058-1.054l-4.479,4.476a.745.745,0,0,0-.022,1.03l4.5,4.507A.747.747,0,1,0,17,15.37Z"
                     transform="translate(-11.251 -6.194)"
