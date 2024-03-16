@@ -284,7 +284,7 @@ export default function Categoryslug({ servicesData }) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="col-5 p-0 mb-md-0 mb-3">
+                                  <div className="col-5 p-0 mb-md-0">
                                     <div className="addCartResp classAddDown" style={{ marginBottom: '30px' }}>
                                       <img
                                         className="d-md-none d-block imageies"
@@ -317,7 +317,7 @@ export default function Categoryslug({ servicesData }) {
                                     <ViewDetails alldata={y} />
                                   </div>
                                 </div>
-                              </div>
+                              </div >
 
                               <div
                                 className="col-lg-6 col-12 p-md-5 pt-md-4 pb-md-0 p-4 d-md-block d-none"
@@ -457,7 +457,7 @@ export default function Categoryslug({ servicesData }) {
             )}
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 }
