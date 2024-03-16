@@ -24,18 +24,6 @@ const Scratch = ({
                 <div onClick={closeModal} className="image-d-location-close">
                   x
                 </div>
-                <div>
-                  <Image
-                    width={40}
-                    height={40}
-                    src="https://img.icons8.com/ultraviolet/40/approval.png"
-                    alt="approval"
-                  />
-                </div>
-                <h2>
-                  Congratulations now you can avail this{" "}
-                  {contentInScratchCard?.type}
-                </h2>
               </>
             )}
             <App
