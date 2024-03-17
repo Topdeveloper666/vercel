@@ -775,7 +775,7 @@ function Payment() {
                 </div>
                 <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
-                    <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Total Amount Payable</p>
+                    <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Total Amount</p>
                     <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>Rs&nbsp;{finalTotal + Math.round(coupon_amount)}</p>
                   </div>
                 </div>
@@ -821,9 +821,9 @@ function Payment() {
                     </div>
                   )}
                   <div style={{ display: 'flex' }}>
-                    <div className="d-flex" style={{ flexDirection: 'column', paddingLeft: '10px', width: '100%' }}>
+                    <div className="d-flex" style={{ flexDirection: 'row', justifyContent: 'space-between', paddingLeft: '10px', width: '100%' }}>
                       <p className="m-0 font-family-alata" style={{ textAlign: 'center' }}>
-                        Total Service Amount
+                        Total Amount Payable
                       </p>
                       <p className="m-0 font-family-alata" style={{ textAlign: 'center' }}>Rs. {finalTotal}</p>
                     </div>
