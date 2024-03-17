@@ -37,7 +37,7 @@ function Modalpup(props) {
       onSelect(locId, locName);
     } else {
       Router.push("/" + locationslug);
-      window.location.href = "/" + locationslug;
+      // window.location.href = "/" + locationslug;
       //Router.reload(window.location.pathname)
     }
   };

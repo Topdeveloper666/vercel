@@ -751,12 +751,12 @@ function Payment() {
                   </div>
                 </div>
 
-                <div className="col-12">
+                {/* <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
                     <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
                     <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
@@ -776,7 +776,13 @@ function Payment() {
                 <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
                     <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Total Amount Payable</p>
-                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>{wallet.total}</p>
+                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>Rs&nbsp;{finalTotal + Math.round(coupon_amount)}</p>
+                  </div>
+                </div>
+                <div className="col-12">
+                  <div className="d-flex flex-row justify-content-between-flex">
+                    <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
+                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
                   </div>
                 </div>
 
@@ -817,7 +823,7 @@ function Payment() {
                   <div style={{ display: 'flex' }}>
                     <div className="d-flex" style={{ flexDirection: 'column', paddingLeft: '10px', width: '100%' }}>
                       <p className="m-0 font-family-alata" style={{ textAlign: 'center' }}>
-                        Total Price
+                        Total Service Amount
                       </p>
                       <p className="m-0 font-family-alata" style={{ textAlign: 'center' }}>Rs. {finalTotal}</p>
                     </div>

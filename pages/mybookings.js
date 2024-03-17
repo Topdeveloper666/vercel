@@ -361,7 +361,7 @@ const ItemS = ({ e }) => {
                   sx={{
                     display: "flex",
                     padding: "25px",
-                    justifyContent: "space-between"
+                    justifyContent: { xs: 'space-around', sm: 'space-betweens', md: 'space-between', lg: 'space-between' }
                   }}
                 >
                   <Grid md={8} item sx={{ display: 'flex', justifyContent: 'space-between', flexDirection: { xs: 'column', sm: 'row', md: 'row', lg: 'row' } }}>
