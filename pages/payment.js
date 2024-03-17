@@ -773,19 +773,22 @@ function Payment() {
                     <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
                   </div>
                 </div>
-                <div className="col-12">
-                  <div className="d-flex flex-row justify-content-between-flex">
-                    <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Total Amount</p>
-                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>Rs&nbsp;{finalTotal + Math.round(coupon_amount)}</p>
+                {coupon_id ? null : (
+                  <div className="col-12">
+                    <div className="d-flex flex-row justify-content-between-flex">
+                      <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Total Amount</p>
+                      <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>Rs&nbsp;{finalTotal + Math.round(coupon_amount)}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="col-12">
-                  <div className="d-flex flex-row justify-content-between-flex">
-                    <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
-                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
+                )}
+                {coupon_id ? null : (
+                  <div className="col-12">
+                    <div className="d-flex flex-row justify-content-between-flex">
+                      <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
+                      <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
+                    </div>
                   </div>
-                </div>
-
+                )}
                 {cashbackService && (
                   <div className="col-12">
                     <div className="d-flex flex-row justify-content-between-flex">
@@ -793,19 +796,19 @@ function Payment() {
                         {" "}
                         Added Cashback Service Fee
                       </p>
-                      <p className="m-1 font-family-alata">₹&nbsp;00</p>
+                      <p className="m-1 font-family-alata">Rs&nbsp;00</p>
                     </div>
                   </div>
                 )}
               </div>
               <Card.Footer className="bg-white p-1">
                 <div className="col-12">
-                  {!coupon_id ? null : (
+                  {/* {!coupon_id ? null : (
                     <div className="col-12">
                       <div className="d-flex flex-row justify-content-between-flex">
                         <p className="m-1 font-family-alata">Total Amount</p>
                         <p className="m-1 font-family-alata">
-                          ₹&nbsp;{finalTotal + Math.round(coupon_amount)}
+                          Rs&nbsp;{finalTotal + Math.round(coupon_amount)}
                         </p>
                       </div>
                     </div>
@@ -815,11 +818,11 @@ function Payment() {
                       <div className="d-flex flex-row justify-content-between-flex">
                         <p className="m-1 font-family-alata">Coupon</p>
                         <p className="m-1 font-family-alata">
-                          -₹&nbsp;{Math.round(coupon_amount)}
+                          -Rs&nbsp;{Math.round(coupon_amount)}
                         </p>
                       </div>
                     </div>
-                  )}
+                  )} */}
                   <div style={{ display: 'flex' }}>
                     <div className="d-flex" style={{ flexDirection: 'row', justifyContent: 'space-between', paddingLeft: '10px', width: '100%' }}>
                       <p className="m-0 font-family-alata" style={{ textAlign: 'center' }}>
