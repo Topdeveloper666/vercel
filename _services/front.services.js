@@ -453,7 +453,7 @@ async function getUserWalletCashBackDetail(user_id, booking_price) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ booking_price }),
   };
-  return fetch(Global.Test_API_PATH + `/wallet-cashback/${user_id}`, requestOptions)
+  return fetch(Global.BASE_API_PATH + `/wallet-cashback-coin-status/${user_id}`, requestOptions)
     .then(handleResponse)
     .then((res) => {
       return res;

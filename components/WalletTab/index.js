@@ -37,7 +37,7 @@ const Index = ({
                       : "Test"}
                   </h1>
                   <h1 style={{ color: "gold", paddingBottom: "10px" }}>
-                    {walletCashback?.wallet_points ? walletCashback?.wallet_points : "0"}{" "}
+                    {walletCashback?.wallet_use ? walletCashback?.wallet_use : "0"}{" "}
                     <span
                       style={{
                         fontSize: "20px",

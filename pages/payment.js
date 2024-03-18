@@ -666,7 +666,7 @@ function Payment() {
                     <div style={{ display: "flex", alignItems: "center" }}>
                       <div>
                       </div>
-                      <div style={{ marginLeft: "10px" }}>{`Use Wallet (Glam Coin - ${walletCashback?.wallet_points ? walletCashback?.wallet_points : 0})`}</div>
+                      <div style={{ marginLeft: "10px" }}>{`Use Wallet (Glam Coin - ${walletCashback?.wallet_use ? walletCashback?.wallet_use : 0})`}</div>
                     </div>
                     <Checkbox {...label} color="secondary" checked={checkedd} />
                   </div>
@@ -747,10 +747,17 @@ function Payment() {
                 <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
                     <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Total Price</p>
-                    <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>Rs&nbsp;{total}</p>
+                    <p className="m-1 font-family-alata" style={{ fontSize: '16px', textAlign: 'right' }}>Rs&nbsp;{total}<p>(Inclusive of all taxes)</p></p>
                   </div>
                 </div>
-
+                {coupon_id ? null : (
+                  <div className="col-12">
+                    <div className="d-flex flex-row justify-content-between-flex">
+                      <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
+                      <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
+                    </div>
+                  </div>
+                )}
                 {/* <div className="col-12">
                   <div className="d-flex flex-row justify-content-between-flex">
                     <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
@@ -778,14 +785,6 @@ function Payment() {
                     <div className="d-flex flex-row justify-content-between-flex">
                       <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Total Amount</p>
                       <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>Rs&nbsp;{finalTotal + Math.round(coupon_amount)}</p>
-                    </div>
-                  </div>
-                )}
-                {coupon_id ? null : (
-                  <div className="col-12">
-                    <div className="d-flex flex-row justify-content-between-flex">
-                      <p className="m-1 font-family-alata" style={{ paddingLeft: '5px', fontSize: '16px' }}>Coupon Discount</p>
-                      <p className="m-1 font-family-alata" style={{ fontSize: '16px' }}>0</p>
                     </div>
                   </div>
                 )}
